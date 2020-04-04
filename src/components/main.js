@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Progress from "./progress";
 import Home from "./home";
 import Step1 from "./step1";
+import Step2 from "./step2";
 class Main extends Component {
   constructor(props) {
     super(props);
@@ -17,9 +18,8 @@ class Main extends Component {
 
   getImageSrc = (src) => {
     src.persist();
-    console.log(src.target.style.backgroundImage);
     this.setState({
-      bgSrc: src,
+      bgSrc: src.target.style.backgroundImage,
     });
     this.changeStep(2);
   };
@@ -45,6 +45,9 @@ class Main extends Component {
         {this.state.step === 0 && <Home changeStep={this.changeStep} />}
         {this.state.step === 1 && (
           <Step1 getImageSrc={this.getImageSrc} changeStep={this.changeStep} />
+        )}
+        {this.state.step === 2 && (
+          <Step2 imgSrc={this.state.bgSrc} changeStep={this.changeStep} />
         )}
       </React.Fragment>
     );
