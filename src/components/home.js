@@ -7,10 +7,10 @@ class Home extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="container">
         <p className="home__surtitle">Welcome to</p>
         <h1 className="home__title">Pannelo</h1>
-        <p>
+        <p className="home__desc">
           Pannelo let’s you create a twitch panel with predefined backgrounds
         </p>
         <button className="home__btn">Create my panel</button>
