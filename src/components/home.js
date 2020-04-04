@@ -13,7 +13,9 @@ class Home extends Component {
         <p className="home__desc">
           Pannelo let’s you create a twitch panel with predefined backgrounds
         </p>
-        <button className="home__btn">Create my panel</button>
+        <button className="home__btn" onClick={(e) => this.props.changeStep(1)}>
+          Create my panel
+        </button>
       </div>
     );
   }

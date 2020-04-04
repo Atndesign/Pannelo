@@ -1,0 +1,40 @@
+.progress-container {
+    margin-bottom: (64/ 19) * $spacer;
+    position: relative;
+
+    .progress__bar {
+        position: relative;
+        height: 4px;
+        background-color: white;
+
+        .progress__bar-in {
+            transition: width .5s ease-in-out;
+            background-color: $primary;
+            left: 0;
+            height: 100%;
+        }
+    }
+
+    .progress__indicator-container {
+        position: absolute;
+        left: 0%;
+        top: -12px;
+
+        &.--step2 {
+            left: 100%;
+        }
+
+        p {
+            color: white;
+            position: relative;
+        }
+    }
+
+    .progress__indicator {
+        width: 24px;
+        height: 24px;
+        background-color: $primary;
+        border-radius: 100%;
+        margin-bottom: $spacer;
+    }
+}
