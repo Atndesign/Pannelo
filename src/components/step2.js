@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Preview from "./preview";
+import html2canvas from "html2canvas";
+import { saveAs } from "file-saver";
 
 class Step2 extends Component {
   constructor(props) {
@@ -17,14 +19,29 @@ class Step2 extends Component {
     });
   };
 
+  download = () => {
+    html2canvas(document.querySelector("#capture")).then((canvas) => {
+      let url = canvas.toDataURL("image/jpeg");
+      saveAs(url, "banner.jpg");
+    });
+  };
+
+  newText = () => {
+    this.setState({
+      text: "",
+    });
+  };
+
   render() {
     return (
       <div className="step2">
+        {/* <button className="home__btn" onClick={this.props.}>Go back</button> */}
         <h1 className="step__title">Enter your custom text</h1>
         <div className="row">
           <div className="col-lg-6">
             <label htmlFor="">Enter your text here</label>
             <input
+              value={this.state.text}
               className="step2__text-input"
               type="text"
               onChange={(e) => this.handleChange(e.target.value, "text")}
@@ -70,8 +87,12 @@ class Step2 extends Component {
               color={this.state.color}
             />
             <div className="step2__bottom-control">
-              <button className="step2__dl">Download</button>
-              <button className="step2__dl">New text</button>
+              <button className="step2__dl" onClick={this.download}>
+                Download
+              </button>
+              <button className="step2__dl" onClick={this.newText}>
+                New text
+              </button>
             </div>
           </div>
         </div>

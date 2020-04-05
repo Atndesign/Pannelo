@@ -5,11 +5,13 @@ class Preview extends Component {
     super(props);
     this.state = {};
   }
+
   render() {
     return (
       <div className="preview">
         <h2>Preview</h2>
         <div
+          id="capture"
           className="preview__thumbnail"
           style={{
             backgroundImage: this.props.bgSrc,
