@@ -23,6 +23,10 @@ Pannelo is a React based web app, that allow you to create some twitch buttons w
 
 You can use pannelo here: [Pannelo](https://atndesign.github.io/pannelo/) .
 
+## Contribution:
+
+if you want to contribute, add your own panel bg, feel free to make a pull request, the size of a panel should be: 300 (width) x 100 (height).
+
 ## Screenshots
 
 <img src="./screen1.png" alt="demo" />
