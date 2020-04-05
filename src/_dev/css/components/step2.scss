@@ -1,20 +1,20 @@
 .step2 {
-    color: white;
+  color: white;
 }
 
 .step2__text-input {
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid $primary;
-    width: 100%;
-    padding: $spacer $spacer $spacer /2 $spacer;
-    color: white;
-    outline-color: $primary;
-    margin-bottom: $spacer * 2;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $primary;
+  width: 100%;
+  padding: $spacer $spacer $spacer / 2 $spacer;
+  color: white;
+  outline-color: $primary;
+  margin-bottom: $spacer * 2;
 }
 
 .step2__input {
-    margin-bottom: $spacer;
+  margin-bottom: $spacer;
 }
 
 // .step2__controls {
@@ -24,48 +24,48 @@
 
 //preview
 .preview {
-    h2 {
-        font-size: 18px;
-    }
+  h2 {
+    font-size: 18px;
+  }
 }
 
 .preview__thumbnail {
-    @extend .thumbnail;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-position: center;
-    width: 300px;
-    height: 100px;
+  @extend .thumbnail;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  width: 300px;
+  height: 100px;
 
-    .preview__text {
-        margin-bottom: 0;
-        font-weight: 900;
-    }
+  .preview__text {
+    margin-bottom: 0;
+    font-weight: 900;
+  }
 }
 
 .step2__bottom-control {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .step2__dl {
-    @extend .home__btn;
-    padding: 8px 20px;
-    margin: 0;
+  @extend .home__btn;
+  padding: 8px 20px;
+  margin: 0;
 }
 
 @include media-breakpoint-desktop() {
-    .preview__thumbnail {
-        height: 100px;
-        width: 300px;
-    }
+  .preview__thumbnail {
+    height: 100px;
+    width: 300px;
+  }
 
-    .step2__dl {
-        margin: 0 $spacer;
-    }
+  .step2__dl {
+    margin: 0 $spacer;
+  }
 
-    .step2__bottom-control {
-        justify-content: flex-start;
-    }
+  .step2__bottom-control {
+    justify-content: flex-start;
+  }
 }

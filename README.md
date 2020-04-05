@@ -19,12 +19,12 @@ Pannelo is a React based web app, that allow you to create some twitch buttons w
 - dom-to-image
 - Save as
 
+## Demo
+
+You can use pannelo here: [Pannelo](https://atndesign.github.io/pannelo/)
+
 ## Screenshots
 
 <img src="./screen1.png" alt="demo" />
 
 <img src="./screen2.png" alt="demo" />
-
-## Demo
-
-You can use pannelo here: [Pannelo](https://atndesign.github.io/pannelo/)
