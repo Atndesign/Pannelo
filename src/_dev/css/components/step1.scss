@@ -4,3 +4,8 @@
     text-align: left;
     margin-bottom: $spacer * 2;
 }
+
+.step__back {
+    @extend .home__btn;
+    margin: 0 0 $spacer 0;
+}

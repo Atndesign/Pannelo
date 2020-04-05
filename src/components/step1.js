@@ -11,6 +11,12 @@ class Step1 extends Component {
   render() {
     return (
       <div className="step1">
+        <button
+          className="step__back"
+          onClick={(e) => this.props.changeStep(this.props.step - 1)}
+        >
+          Go back
+        </button>
         <h1 className="step__title">Please choose a picture</h1>
         <div className="row">
           {this.state.bgs.map((bg) => {

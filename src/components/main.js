@@ -44,10 +44,18 @@ class Main extends Component {
         )} */}
         {this.state.step === 0 && <Home changeStep={this.changeStep} />}
         {this.state.step === 1 && (
-          <Step1 getImageSrc={this.getImageSrc} changeStep={this.changeStep} />
+          <Step1
+            step={this.state.step}
+            getImageSrc={this.getImageSrc}
+            changeStep={this.changeStep}
+          />
         )}
         {this.state.step === 2 && (
-          <Step2 imgSrc={this.state.bgSrc} changeStep={this.changeStep} />
+          <Step2
+            step={this.state.step}
+            imgSrc={this.state.bgSrc}
+            changeStep={this.changeStep}
+          />
         )}
       </React.Fragment>
     );

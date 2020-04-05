@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Preview from "./preview";
-import html2canvas from "html2canvas";
+import domtoimage from "dom-to-image";
 import { saveAs } from "file-saver";
 
 class Step2 extends Component {
@@ -20,10 +20,14 @@ class Step2 extends Component {
   };
 
   download = () => {
-    html2canvas(document.querySelector("#capture")).then((canvas) => {
-      let url = canvas.toDataURL("image/jpeg");
-      saveAs(url, "banner.jpg");
-    });
+    let imgDom = domtoimage
+      .toPng(document.querySelector("#capture"))
+      .then(function (dataUrl) {
+        saveAs(dataUrl, "banner.jpg");
+      })
+      .catch(function (error) {
+        console.error("oops, something went wrong!", error);
+      });
   };
 
   newText = () => {
@@ -35,7 +39,12 @@ class Step2 extends Component {
   render() {
     return (
       <div className="step2">
-        {/* <button className="home__btn" onClick={this.props.}>Go back</button> */}
+        <button
+          className="step__back"
+          onClick={(e) => this.props.changeStep(this.props.step - 1)}
+        >
+          Go back
+        </button>
         <h1 className="step__title">Enter your custom text</h1>
         <div className="row">
           <div className="col-lg-6">
