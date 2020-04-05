@@ -21,7 +21,7 @@ Pannelo is a React based web app, that allow you to create some twitch buttons w
 
 ## Demo
 
-You can use pannelo here: [Pannelo](https://atndesign.github.io/pannelo/)
+You can use pannelo here: [Pannelo](https://atndesign.github.io/pannelo/) .
 
 ## Screenshots
 
