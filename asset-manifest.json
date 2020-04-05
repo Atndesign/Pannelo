@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Pannelo/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/Pannelo/static/js/main.86821c8a.chunk.js",
-    "main.js.map": "/Pannelo/static/js/main.86821c8a.chunk.js.map",
+    "main.js": "/Pannelo/static/js/main.cf9fde89.chunk.js",
+    "main.js.map": "/Pannelo/static/js/main.cf9fde89.chunk.js.map",
     "runtime-main.js": "/Pannelo/static/js/runtime-main.226b2dec.js",
     "runtime-main.js.map": "/Pannelo/static/js/runtime-main.226b2dec.js.map",
     "static/js/2.16d558a8.chunk.js": "/Pannelo/static/js/2.16d558a8.chunk.js",
     "static/js/2.16d558a8.chunk.js.map": "/Pannelo/static/js/2.16d558a8.chunk.js.map",
     "index.html": "/Pannelo/index.html",
-    "precache-manifest.d8f70de8a39b354b75db88c71109e477.js": "/Pannelo/precache-manifest.d8f70de8a39b354b75db88c71109e477.js",
+    "precache-manifest.1809517781f570cde7653c386c8cca65.js": "/Pannelo/precache-manifest.1809517781f570cde7653c386c8cca65.js",
     "service-worker.js": "/Pannelo/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/Pannelo/static/css/main.5ecd60fb.chunk.css.map",
     "static/js/2.16d558a8.chunk.js.LICENSE.txt": "/Pannelo/static/js/2.16d558a8.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.226b2dec.js",
     "static/js/2.16d558a8.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.86821c8a.chunk.js"
+    "static/js/main.cf9fde89.chunk.js"
   ]
 }
